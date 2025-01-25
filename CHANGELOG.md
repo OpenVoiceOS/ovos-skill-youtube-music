@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.1.6a1](https://github.com/OpenVoiceOS/skill-ovos-youtube-music/tree/0.1.6a1) (2024-11-19)
+## [0.1.7a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.7a1) (2025-01-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-youtube-music/compare/0.1.5...0.1.6a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.6...0.1.7a1)
 
 **Merged pull requests:**
 
-- fix:allow workshop 3.0.0 [\#24](https://github.com/OpenVoiceOS/skill-ovos-youtube-music/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+- fix automations [\#26](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/26) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
