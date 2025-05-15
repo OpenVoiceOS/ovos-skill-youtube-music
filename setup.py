@@ -5,7 +5,7 @@ from os.path import dirname, join
 from setuptools import setup
 import os
 
-URL = "https://github.com/OpenVoiceOS/skill-ovos-youtube-music"
+URL = "https://github.com/OpenVoiceOS/ovos-skill-youtube-music"
 SKILL_CLAZZ = "YoutubeMusicSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-youtube-music"  # pip install PYPI_NAME
 
