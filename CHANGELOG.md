@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.7a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.7a2) (2025-06-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.7a1...0.1.7a2)
+
+**Closed issues:**
+
+- Not on PyPi [\#8](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/issues/8)
+
+**Merged pull requests:**
+
+- workshop 7.X.X [\#29](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/29) ([JarbasAl](https://github.com/JarbasAl))
+- fix: standardize urls / skill-id / pypi-name [\#28](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.7a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.7a1) (2025-01-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.6...0.1.7a1)
