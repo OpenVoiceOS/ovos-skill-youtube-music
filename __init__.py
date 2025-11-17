@@ -1,5 +1,6 @@
 from os.path import join, dirname
 from typing import Iterable, Union
+import re
 
 from ovos_utils import classproperty
 from ovos_utils.ocp import MediaType, PlaybackType, Playlist, MediaEntry
@@ -31,6 +32,45 @@ class YoutubeMusicSkill(OVOSCommonPlaybackSkill):
 
     def search_yt(self, phrase):
         return search_yt_music(phrase, as_dict=False)
+
+    # Helper function to try and get max resolution thumbnail
+    def _get_high_res_thumbnail(self, url):
+        """
+        Replaces a lower resolution thumbnail ID in the URL with 'maxresdefault'.
+        If no known low-resolution ID is found, the original URL is returned (fallback).
+        Also updates googleusercontent profile picture size to 800x800 for high resolution.
+        """
+        if not url:
+            return url
+        
+        original_url = url
+        desired_size_param = "=w800-h800-l90-rj"
+
+        # NEW LOGIC: Adjust googleusercontent profile pictures for high resolution
+        if "googleusercontent.com/profile/picture" in original_url:
+            
+            # 1. Try to replace an existing size parameter (e.g., =w120-h120-l90-rj)
+            # The pattern looks for "=w<digits>-h<digits>-l90-rj"
+            new_url = re.sub(r'=w\d+-h\d+-l90-rj', desired_size_param, original_url)
+            
+            # 2. If replacement didn't happen and the desired parameter is not already present,
+            # append it to the end of the URL.
+            if new_url == original_url and desired_size_param not in original_url:
+                # Check if the URL ends with a number (e.g., '.../picture/2'), which is common
+                if re.search(r'/\d+$', original_url):
+                    return original_url + desired_size_param
+                
+            return new_url
+            
+        # Existing logic: Try high resolution standard YouTube thumbnail
+        for quality in ["default", "hqdefault", "mqdefault", "sddefault"]:
+            if f"/{quality}.jpg" in original_url:
+                # Returns the URL with 'maxresdefault.jpg'
+                return original_url.replace(f"/{quality}.jpg", "/maxresdefault.jpg")
+            
+        # Fallback: Return original URL if no replacement was made
+        return original_url
+
 
     # score
     def calc_score(self, phrase, match, idx=0, base_score=0,
@@ -94,7 +134,8 @@ class YoutubeMusicSkill(OVOSCommonPlaybackSkill):
                         playback=PlaybackType.AUDIO,
                         media_type=MediaType.MUSIC,
                         length=e.length * 1000 if e.length else 0,
-                        image=e.thumbnail_url,
+                        # Use high resolution image, with fallback to original
+                        image=self._get_high_res_thumbnail(e.thumbnail_url),
                         title=e.title,
                         artist=e.artist,
                         skill_id=self.skill_id,
@@ -114,7 +155,8 @@ class YoutubeMusicSkill(OVOSCommonPlaybackSkill):
                     playback=PlaybackType.AUDIO,
                     media_type=MediaType.VIDEO if isinstance(v, MusicVideo) else MediaType.MUSIC,
                     length=v.length * 1000 if v.length else 0,
-                    image=v.thumbnail_url,
+                    # Use high resolution image, with fallback to original
+                    image=self._get_high_res_thumbnail(v.thumbnail_url),
                     title=v.title,
                     artist=v.artist,
                     skill_id=self.skill_id,
