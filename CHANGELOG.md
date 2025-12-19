@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a2...0.1.8a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency ovos-workshop to v8 [\#40](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/40) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.8a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a2) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a1...0.1.8a2)
