@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8a4](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a4) (2026-03-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a3...0.1.8a4)
+
+**Merged pull requests:**
+
+- Add French YouTube Music locale [\#41](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/41) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [0.1.8a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a2...0.1.8a3)
