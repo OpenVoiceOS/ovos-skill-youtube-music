@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.9a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.9a1) (2026-04-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a4...0.1.9a1)
+
+**Merged pull requests:**
+
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#42](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/42) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.8a4](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a4) (2026-03-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a3...0.1.8a4)
