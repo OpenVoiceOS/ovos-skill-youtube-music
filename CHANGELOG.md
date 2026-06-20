@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.10a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.10a1) (2026-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.9a3...0.1.10a1)
+
+**Merged pull requests:**
+
+- refactor: migrate packaging to pyproject.toml [\#47](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/47) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.9a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.9a3) (2026-04-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.9a2...0.1.9a3)
