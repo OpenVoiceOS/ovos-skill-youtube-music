@@ -1,25 +1,76 @@
 # Changelog
 
-## [0.1.7a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.7a2) (2025-06-08)
+## [0.1.10a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.10a2) (2026-07-12)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.7a1...0.1.7a2)
-
-**Closed issues:**
-
-- Not on PyPi [\#8](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/issues/8)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.10a1...0.1.10a2)
 
 **Merged pull requests:**
 
-- workshop 7.X.X [\#29](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/29) ([JarbasAl](https://github.com/JarbasAl))
-- fix: standardize urls / skill-id / pypi-name [\#28](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+- fix: allow ovos-workshop 9.x [\#50](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/50) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.1.7a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.7a1) (2025-01-25)
+## [0.1.10a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.10a1) (2026-06-20)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.6...0.1.7a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.9a3...0.1.10a1)
 
 **Merged pull requests:**
 
-- fix automations [\#26](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/26) ([JarbasAl](https://github.com/JarbasAl))
+- refactor: migrate packaging to pyproject.toml [\#47](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/47) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.9a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.9a3) (2026-04-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.9a2...0.1.9a3)
+
+**Merged pull requests:**
+
+- chore\(ovos-skill-youtube-music\): allow ovos-workshop\<9.0.0 [\#45](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.9a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.9a2) (2026-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.9a1...0.1.9a2)
+
+**Merged pull requests:**
+
+- ci: modernize GitHub workflows [\#43](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/43) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.9a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.9a1) (2026-04-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a4...0.1.9a1)
+
+**Merged pull requests:**
+
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#42](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/42) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.8a4](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a4) (2026-03-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a3...0.1.8a4)
+
+**Merged pull requests:**
+
+- Add French YouTube Music locale [\#41](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/41) ([goldyfruit](https://github.com/goldyfruit))
+
+## [0.1.8a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a2...0.1.8a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency ovos-workshop to v8 [\#40](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/40) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.1.8a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a2) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.8a1...0.1.8a2)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#35](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/35) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.1.8a1](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.8a1) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.7...0.1.8a1)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#34](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/34) ([renovate[bot]](https://github.com/apps/renovate))
 
 
 
