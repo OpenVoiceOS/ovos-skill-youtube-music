@@ -60,10 +60,11 @@ class YoutubeMusicSkill(OVOSCommonPlaybackSkill):
         if media_type == MediaType.MUSIC:
             base_score += 10
 
-        if self.voc_match(phrase, "youtube"):
-            # explicitly requested youtube
+        if self.voc_match(phrase, "youtube_music_skill"):
+            # explicitly requested youtube MUSIC (not just plain youtube,
+            # which is handled by the separate youtube video skill)
             base_score += 50
-            phrase = self.remove_voc(phrase, "youtube")
+            phrase = self.remove_voc(phrase, "youtube_music_skill")
 
         idx = 0
         for v in self.search_yt(phrase):

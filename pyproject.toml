@@ -17,6 +17,9 @@ dependencies = [
     "tutubo>=2.0.2",
 ]
 
+[project.optional-dependencies]
+test = ["ovoscope", "ovos-ocp-pipeline-plugin"]
+
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-skill-youtube-music"
 
