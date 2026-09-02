@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-skill-youtube-music"
+dynamic = ["version"]
+description = "ovos common play youtube music skill plugin"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "JarbasAi", email = "jarbasai@mailfence.com"}]
+keywords = ["ovos", "skill", "plugin"]
+dependencies = [
+    "ovos-utils>=0.1.0",
+    "ovos-bus-client>=0.0.9",
+    "ovos-workshop>=8.0.0,<10.0.0",
+    "tutubo>=2.0.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-skill-youtube-music"
+
+[project.entry-points."opm.skill"]
+"ovos-skill-youtube-music.openvoiceos" = "ovos_skill_youtube_music:YoutubeMusicSkill"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["ovos_skill_youtube_music"]
+
+[tool.setuptools.package-dir]
+ovos_skill_youtube_music = "."
+
+[tool.setuptools.package-data]
+ovos_skill_youtube_music = ["*.json", "locale/**/*", "res/**/*", "vocab/**/*", "dialog/**/*", "ui/**/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_skill_youtube_music.version.__version__"}
