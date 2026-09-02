@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.10a3](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.10a3) (2026-09-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.10a2...0.1.10a3)
+
+**Merged pull requests:**
+
+- docs: deprecation notice — superseded by MediaProvider plugins [\#49](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/pull/49) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.10a2](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/tree/0.1.10a2) (2026-07-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-youtube-music/compare/0.1.10a1...0.1.10a2)
